@@ -1,0 +1,377 @@
+
+/* GRUNNLEGGENDE OPPSETT */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 24px;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-form input[type="search"],
+.search-form button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-form input[type=search]{
+    flex: 1;
+    border-right: none;
+}
+
+.search-form button {
+    background-color: #f1f1f1;
+    cursor: pointer; 
+}
+
+.search-form button:hover{
+    background-color: #e1e1e1;
+}
+
+
+
+.meny ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.meny ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+
+.meny ul li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-icons{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.header-icons a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer .footer-kontakt, footer .footer-snarveier{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+footer .footer-kontakt h3, footer .footer-snarveier h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+footer .footer-kontakt address, footer .footer-snarveier ul{
+    font-size: 14px;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer .footer-snarveier ul{
+    list-style: none;
+    padding: 0;
+    line-height: 1.7;
+   
+    
+}
+
+footer .footer-snarveier ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+footer .footer-snarveier ul li a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+footer .footer-sosiale-medier{
+    margin-left: 24px;
+    margin-top: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer-sosiale-medier h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-sosiale-medier a{
+    margin-right: 16px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-sosiale-medier a:hover{
+    color: #000;
+}
+
+
+footer .footer-logo{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.footer-logo p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.kategori-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.kategori-buttons .button{
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease, color 0.3 ease;
+
+}
+
+
+.kategori-buttons .button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#populære-produkter{
+    text-align: center;
+    padding: 16px;
+}
+
+#populære-produkter h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#populære-produkter p{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+
+.produkter{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.produkter article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    border: 1px solid black;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 8px;
+ 
+}
+
+.produkter img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+
+#populære-kategorier{
+    padding: 16px;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.kategorier{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.kategorier article {
+    border: 1px solid black;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 600px;
+    gap:16px;
+}
+
+.kategorier img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+#anmeldelser{
+    padding: 16px;
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.anmeldelse-kort-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.anmeldelse-kort{
+    display: flex;
+    gap: 16px;
+    border: 1px solid black;
+    padding: 16px;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 600px;
+
+}
+
+
+.anmeldelse-kort img{
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.anmeldelse-kort p{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.anmeldelse-kort h3{
+   margin: 0 0 px 0;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.anmeldelse-kort img{
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+article {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+
+
+/* BANNER */
+.banner {
+    background-color: #e0e0e0;
+    padding: 16px;
+    text-align: right;
+}
+
+.banner a {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 8px;
+}

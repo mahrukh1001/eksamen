@@ -1,29 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="no">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title> Nettbutikk</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+    <title>Mahrukh sin nettbutikk</title>
+</head>
+<body>
     <header>
-        <div class="header-container">
-            <!--Ikoner (hjem, favoritter og kundeservice)-->
-            <a href="#"><img src="home-icon.png" alt="Hjem"></a>
-            <a href="#"><img src="favorites-icon.png" alt="Favoritter"></a>
-            <a href="#"><img src="customer-service-icon.png" alt="Kundeservice"></a>
+    <div class="header-container">
+        <form class="search-form">
+            <input type="search" placeholder="Søk her" id="search">
+            <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
 
-        </div>
-        <form> <!--Burde dette være i nav? hele form eller div og?-->
-            <!--Pluss dette tok jeg fra en annen oppg går det greit?-->
-            <label for="search">Search</label>
-            <input type="search" placeholder="Here can you search after products..." id="search">
-            <input type="submit" value="search">
         </form>
+        <nav class="meny">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+
+                <li class="logo">
+                    <a href="index.html">LOGO</a>
+                </li>
 
 
+                <li><a href="#">Kategorier</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+        </div>
+    </div>
     </header>
-  </body>  
+    <main>
+        <section class="banner">
+            <h2>Velkommen til vår nettbutikk!</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <a href="populære-produkter">Les mer</a>
+        </section>
+
+
+        <!--POPULÆRE PRODUKTER-->
+        <section id="populære-produkter">
+            <h2>Våre mest populære produktene</h2>
+            <p>Oppdag det beste av det beste</p>
+            <aside class="kategori-buttons"> 
+                <a href="#kategori1" class="button">New Product</a>
+                <a href="#kategori2" class="button">Special Price</a>
+                <a href="kategori3" class="button">Best sellers</a>
+            </aside>
+            <div class="produkter">
+                <article class="produktkort1">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Produkt 1">
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Pris: 1999,-</p>
+
+                </article>
+                <article class="produktkort2">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Produkt 2">
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Pris: 1999,-</p>
+                </article>
+                <article class="produktkort3">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Produkt 3">
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Pris: 1999,-</p>
+                </article>
+                <article class="produktkort4">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Produkt 4">
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Pris: 1999,-</p>
+                </article>
+                <article class="produktkort5">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Produkt 5">
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Pris: 1999,-</p>
+                </article>
+                <article class="produktkort6">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Produkt 6">
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Pris: 1999,-</p>
+                </article>
+            </div>
+        </section>
+
+        <!--POPULÆRE KATEGORIER-->
+        <section id="populære-kategorier">
+            <h2>Våre mest populære kategorier</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="kategorier">
+                <article class="kategori kategori1">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kategori 1 bilde">
+                    <h3>Category 1</h3>
+                </article>
+    
+                <article class="kategori kategori2">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kategori 2 bilde">
+                    <h3>Category 2</h3>
+                </article>
+    
+                <article class="kategori kategori3">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kategori 3 bilde">
+                    <h3>Category 3</h3>
+                </article>
+
+                <article class="kategori kategori4">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kategori 4 bilde">
+                    <h3>Category 4</h3>
+                </article>
+
+                <article class="kategori kategori5">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kategori 5 bilde">
+                    <h3>Category 5</h3>
+                </article>
+            </div>   
+        </section>ggfrfr\\
+
+        <!--ANMELDELSER-->
+        <section id="anmeldelser">
+            <h2>Anmeldelser</h2>
+            <div class="anmeldelse-kort-container">
+                <article class="anmeldelse-kort">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kunde 1 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+                <article class="anmeldelse-kort">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kunde 2 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+                <article class="anmeldelse-kort">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kunde 3 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+                <article class="anmeldelse-kort">
+                    <img src="https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4" alt="Kunde 4 bilde">
+                    <h3>Rober Labrador</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus ex ut nulla ornare, id lacinia mauris rutrum. Duis varius consequat placerat. Mauris pharetra non nulla nec aliquet. Vestibulum hendrerit erat sit amet imperdiet posuere. Nunc lacus lorem, commodo sit amet tincidunt sed, accumsan vitae dolor. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla. </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-logo">
+                <a href="#">LOGO</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla.</p>
+        </section>
+
+        <section class="footer-main">
+            <section class="footer-kontakt">
+                <h3>Kontakt</h3>
+                <address>
+                    <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                    <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 60 80 00</p>
+                    <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no</p>
+                    <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00</p>
+                </address>
+            </section>
+
+        <section class="footer-snarveier">
+            <h3>Snarveier</h3>
+                <ul>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="footer-sosiale-medier">
+            <h3>SOSIALE MEDIER</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </section>
+    </footer>
+</body>
 </html>
+ 

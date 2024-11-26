@@ -1,29 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="no">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title> Nettbutikk</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+    <title>Mahrukh sin nettbutikk</title>
+</head>
+<body>
     <header>
-        <div class="header-container">
-            <!--Ikoner (hjem, favoritter og kundeservice)-->
-            <a href="#"><img src="home-icon.png" alt="Hjem"></a>
-            <a href="#"><img src="favorites-icon.png" alt="Favoritter"></a>
-            <a href="#"><img src="customer-service-icon.png" alt="Kundeservice"></a>
+    <div class="header-container">
+        <form class="search-form">
+            <input type="search" placeholder="Søk her" id="search">
+            <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
 
-        </div>
-        <form> <!--Burde dette være i nav? hele form eller div og?-->
-            <!--Pluss dette tok jeg fra en annen oppg går det greit?-->
-            <label for="search">Search</label>
-            <input type="search" placeholder="Here can you search after products..." id="search">
-            <input type="submit" value="search">
         </form>
+        <nav class="meny">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+
+                <li class="logo">
+                    <a href="index.html">LOGO</a>
+                </li>
 
 
+                <li><a href="#">Kategorier</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+        </div>
+    </div>
     </header>
-  </body>  
+    <main> 
+    </main>
+    <footer>
+        <section class="footer-logo">
+                <a href="#">LOGO</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et erat egestas, aliquet enim sit amet, eleifend nulla.</p>
+        </section>
+
+        <section class="footer-main">
+            <section class="footer-kontakt">
+                <h3>Kontakt</h3>
+                <address>
+                    <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                    <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 60 80 00</p>
+                    <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no</p>
+                    <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00</p>
+                </address>
+            </section>
+
+        <section class="footer-snarveier">
+            <h3>Snarveier</h3>
+                <ul>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="footer-sosiale-medier">
+            <h3>SOSIALE MEDIER</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </section>
+    </footer>
+</body>
 </html>
+ 
